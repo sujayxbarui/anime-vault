@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
 }
 
-/* NAVBAR */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -41,7 +41,7 @@ body {
   color: var(--pink);
 }
 
-/* HERO */
+
 .hero {
   text-align: center;
   padding: 3.5rem 1.5rem 2.5rem;
@@ -84,7 +84,7 @@ body {
 }
 .search-box input::placeholder { color: var(--text2); }
 
-/* SECTION HEADER */
+
 .section-header {
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@ body {
   border-radius: 10px;
 }
 
-/* LOADER */
+
 .loader-wrap {
   text-align: center;
   padding: 4rem 1rem;
@@ -126,7 +126,7 @@ body {
 }
 .loader-wrap p { color: var(--text2); font-size: 0.85rem; }
 
-/* ERROR */
+
 .error-box {
   margin: 1rem 2rem;
   padding: 1rem 1.5rem;
@@ -137,7 +137,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* GRID */
+
 .anime-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -151,7 +151,7 @@ body {
   padding: 2rem;
 }
 
-/* CARD */
+
 .anime-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -221,7 +221,7 @@ body {
   font-weight: 500;
 }
 
-/* PAGINATION */
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -248,7 +248,7 @@ body {
 }
 .pagination button:disabled { opacity: 0.35; cursor: not-allowed; }
 
-/* FOOTER */
+
 .site-footer {
   text-align: center;
   padding: 1.5rem;
@@ -260,7 +260,7 @@ body {
 
 .hidden { display: none !important; }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .navbar { padding: 0.75rem 1rem; }
   .hero { padding: 2rem 1rem; }
