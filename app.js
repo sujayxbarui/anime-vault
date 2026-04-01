@@ -13,14 +13,14 @@ const pagination   = document.getElementById('pagination');
 const sectionTitle = document.getElementById('sectionTitle');
 const resultCount  = document.getElementById('resultCount');
 
-// ── API FETCH ──────────────────────────────────
+
 async function apiFetch(url) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`API error ${res.status}`);
   return res.json();
 }
 
-// ── LOAD DATA ──────────────────────────────────
+
 async function loadAnime() {
   showLoader();
   hideError();
@@ -53,7 +53,7 @@ async function loadAnime() {
   }
 }
 
-// ── RENDER GRID ────────────────────────────────
+
 function renderAnimeGrid(animes) {
   animeGrid.innerHTML = '';
 
@@ -93,7 +93,7 @@ function renderAnimeGrid(animes) {
   });
 }
 
-// ── PAGINATION ─────────────────────────────────
+
 function renderPagination() {
   pagination.innerHTML = '';
   if (totalPages <= 1) return;
@@ -123,14 +123,14 @@ function makePageBtn(label, disabled, onClick, active = false) {
   return btn;
 }
 
-// ── HELPERS ────────────────────────────────────
+
 function showLoader() { loader.classList.remove('hidden'); animeGrid.innerHTML = ''; pagination.innerHTML = ''; }
 function hideLoader() { loader.classList.add('hidden'); }
 function showError(msg) { errorBox.textContent = '⚠️ ' + msg; errorBox.classList.remove('hidden'); }
 function hideError() { errorBox.classList.add('hidden'); }
 function scrollUp() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
-// ── SEARCH (debounced) ─────────────────────────
+
 searchInput.addEventListener('input', () => {
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(() => {
@@ -149,5 +149,5 @@ searchInput.addEventListener('keydown', (e) => {
   }
 });
 
-// ── START ──────────────────────────────────────
+
 loadAnime();
