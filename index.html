@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">Anime Vault</div>
+  </nav>
+
+  <section class="hero">
+    <h1>Your anime. <em>Tracked. Found. Loved.</em></h1>
+    <p>Search 20,000+ anime from MyAnimeList.</p>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search anime… e.g. Attack on Titan" autocomplete="off" />
+    </div>
+  </section>
+
+  <div class="section-header">
+    <h2 id="sectionTitle">🏆 Top Anime of All Time</h2>
+    <span id="resultCount" class="result-count"></span>
+  </div>
+
+  <!-- LOADER -->
+  <div class="loader-wrap hidden" id="loader">
+    <div class="sakura-loader">
+      <span>🌸</span><span>🌸</span><span>🌸</span>
+    </div>
+    <p>Loading from the vault…</p>
+  </div>
+
+  <!-- ERROR -->
+  <div class="error-box hidden" id="errorBox"></div>
+
+  <!-- ANIME GRID -->
+  <div class="anime-grid" id="animeGrid"></div>
+
+  <!-- PAGINATION -->
+  <div class="pagination" id="pagination"></div>
+
+  <footer class="site-footer">
+    <p>Data from <a href="https://jikan.moe/" target="_blank">Jikan API</a> · No API key needed · Built with 💜</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
