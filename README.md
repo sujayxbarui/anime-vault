@@ -36,6 +36,37 @@ Search any anime in real-time, filter by genre, type, or airing status, sort res
 
 ---
 
+## Project Structure
+
+```
+anime-vault/
+├── index.html        # App shell — layout, search bar, filter dropdowns, tab nav, card grid, pagination
+├── style.css         # All styles — CSS variables, light/dark theme, Flexbox/Grid, sakura loader, media queries
+├── app.js            # All logic — Jikan API calls, debouncing, HOFs (.filter .map .find .sort), DOM rendering, localStorage
+└── README.md         # Docs — purpose, API info, features, HOFs table, milestones, run instructions, author
+```
+
+### File Responsibilities
+
+#### `index.html`
+The entry point and app shell. Defines the visible structure — search input, filter dropdowns, tab buttons (Discover / Favourites), card grid container, and pagination controls. Links in `style.css` and `app.js`. No build step required — open directly in any browser.
+
+#### `style.css`
+All visual rules. CSS custom properties at `:root` drive theming — toggling light/dark mode flips one attribute on `<body>`, not individual rules. Flexbox and Grid handle the responsive layout. `@keyframes` powers the sakura loading animation. Media queries ensure the layout adapts across mobile, tablet, and desktop.
+
+#### `app.js`
+The brain of the app. Handles:
+- Jikan API v4 calls with debouncing (prevents excessive requests on keystroke)
+- All Higher Order Functions — `.filter()`, `.map()`, `.find()`, `.sort()`, `Array.from().map()`, `.forEach()`
+- DOM rendering for anime cards, pagination buttons, and error/loading states
+- `localStorage` reads and writes for favourites and theme preference
+- All event listeners for search, filters, sort, tabs, and pagination
+
+#### `README.md`
+Project documentation covering purpose, API details, feature list, HOFs table, project structure, milestones, run instructions, and author info.
+
+---
+
 ## Array HOFs Used
 
 | HOF | Where Used |
@@ -57,14 +88,6 @@ Search any anime in real-time, filter by genre, type, or airing status, sort res
 - Fetch API
 - localStorage (favourites + theme persistence)
 
----
-
-## Project Structure
-
-├── index.html   # App structure and markup
-├── style.css    # Styling, themes, and responsive layout
-├── app.js       # API calls, rendering, HOFs, event listeners
-└── README.md    # Project documentation
 ---
 
 ## How to Run
