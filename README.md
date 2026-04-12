@@ -105,7 +105,7 @@ Or with VS Code Live Server: right-click `index.html` → **Open with Live Serve
 | M1 | Project Setup & Planning | 23rd March | ✅ Done |
 | M2 | API Integration & Responsive UI | 1st April | ✅ Done |
 | M3 | Search, Filter, Sort, Dark Mode, Favourites | 8th April | ✅ Done |
-| M4 | Documentation, Deployment & Final Submission | 10th April | ✅ Done |
+| M4 | Documentation, Deployment & Final Submission | 12th April | ✅ Done |
 
 ---
 
