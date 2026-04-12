@@ -61,10 +61,11 @@ Search any anime in real-time, filter by genre, type, or airing status, sort res
 
 ## Project Structure
 anime-vault/
-├── index.html   # App structure and markup
-├── style.css    # Styling, themes, and responsive layout
-├── app.js       # API calls, rendering, HOFs, event listeners
-└── README.md    # Project documentation
+│
+├── index.html     # App structure — two tabs (Discover + My List)
+├── style.css      # Soft pastel Japanese aesthetic, full theming
+├── app.js         # All logic — API, HOFs, list management, modal
+└── README.md      # This file
 
 ---
 
